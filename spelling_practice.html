@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+ <head>
+  <meta charset="utf-8">
+  <title>Spelling Exercise</title> 
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="spelling_practice.css">
+  
+ </head>
+
+ <body>
+  <div class="spelling-practice">
+    <div class="row">
+      <div class="col-md-1"></div>
+	
+      <div class="col-md-10 header-spelling-panel">
+	
+        <h1 id="top-spelling"></h1>
+        <h3 id="select-level"></h3>
+      
+	    <select id="spelling-select" onchange="filterWords()">
+          <option value="L">Lower</option>
+          <option value="I">Intermediate</option>
+          <option value="A">Upper</option>
+        </select> 
+      </div>
+	
+      <div class="col-md-1"></div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-1"></div>
+	
+      <div class="col-md-6 main-spelling-panel">
+        <h4 id="sub-spelling"></h4>
+	  
+        <div class="row">
+          <div class="col-md-4 tac">
+            <div id="b1" class="spell-div1">
+              <form onsubmit='return checkAnswer(1)' action="">
+                <input type='submit' id='Button1' value='' class='btn btn-large btn-primary animated bounceIn spell-button'>
+              </form>
+            </div>
+            <p id="rw1"></p>
+          </div>		
+          <div class="col-md-4 tac">
+            <div id="b2" class="spell-div">
+              <form onsubmit='return checkAnswer(2)' action="">
+                <input type='submit' id='Button2' value='' class='btn btn-large btn-primary animated bounceIn spell-button'>
+              </form>
+            </div>
+            <p id="rw2"></p>
+           </div>		 
+           <div class="col-md-4 tac">
+             <div id="b3" class="spell-div">
+               <form onsubmit='return checkAnswer(3)' action="">
+                 <input type='submit' id='Button3' value='' class='btn btn-large btn-primary animated bounceIn spell-button'>
+               </form>
+             </div>
+             <p id="rw3"></p>
+           </div>
+        </div>
+   
+        <div id="north-am"></div>
+   
+        <div class="next-word">
+          <form onsubmit='return (nextWord())' action="">
+	        <input type='submit' id='next-word-button' value='Новое слово' class='btn btn-large btn-danger animated bounceIn img-centered' style="display:none;">
+	      </form>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-2"></div>
+		
+          <div class="col-md-10 side-spelling-panel">
+            <p id="words-left"></p>
+            <p id="timer-message"></p>
+            <p id="correct-total"></p>
+            <p id="misspelled-title"></p>
+            <div id="misspelled"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="spelling_practice.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </body>
+</html>
