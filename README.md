@@ -1,4 +1,7 @@
 # spelling-practice
 A Javascript-based spelling practice exercise
 
-Demo: <a href="http://www.kriventsov.com/projects/spelling/spelling_practice.html" target="_blank">http://www.kriventsov.com/projects/spelling/spelling_practice.html</a>
+Demo: http://www.kriventsov.com/projects/spelling/spelling_practice.html
+
+Stan Kriventsov, 2017
+Created for http://www.ielts-tutor.ru
